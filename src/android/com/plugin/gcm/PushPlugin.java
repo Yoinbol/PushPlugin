@@ -112,7 +112,7 @@ public class PushPlugin extends CordovaPlugin {
 	public static void sendExtras(Bundle extras)
 	{
 		if (extras != null) {
-			if (gECB != null && gWebView != null) {
+			if (true) { //gECB != null && gWebView != null
 				sendJavascript(convertBundleToJson(extras));
 			} else {
 				Log.v(TAG, "sendExtras: caching extras to send at a later time.");
